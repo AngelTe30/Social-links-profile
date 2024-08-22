@@ -1,0 +1,120 @@
+:root{
+    --color-bg:hsl(0, 0%, 8%);
+    --color-card:hsl(0, 0%, 12%);
+    --color-links:hsl(0, 0%, 20%);
+    --color-text:hsl(0, 0%, 100%);
+    --color-hover:hsl(75, 94%, 57%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: grid;
+    font-family: "Inter", sans-serif;
+    background: var(--color-bg);
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    width: 20rem;
+    height: 40rem;
+    background-color: var(--color-card);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.container .info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .info img{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+.container .info h2{
+    color: var(--color-text);
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+.container .info h4{
+    color: var(--color-hover);
+    margin-bottom: 1rem;
+}
+
+.container .info p{
+    color: var(--color-text);
+    font-size: .9rem;
+}
+
+
+.container .links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container .links li{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+    margin: .75rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.container .links li a{
+    display: grid;
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    background-color: var(--color-links);
+    height: 3rem;
+    width: 17.5rem;
+    color: var(--color-text);
+    justify-content: center;
+    transition: .3s ease;
+    font: 600;
+}
+
+.container .links li a:hover{
+    color: var(--color-bg);
+    background-color: var(--color-hover);
+}
+
+
+footer{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer .attribution {
+    color:var(--color-text)
+}
+
+footer .attribution a{
+    color:var(--color-hover)
+}
